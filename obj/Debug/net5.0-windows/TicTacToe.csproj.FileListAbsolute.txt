@@ -6,7 +6,6 @@ C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\bin\Debug\net5.0-windows\TicTacToe.
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\bin\Debug\net5.0-windows\ref\TicTacToe.dll
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\bin\Debug\net5.0-windows\TicTacToe.pdb
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.csprojAssemblyReference.cache
-C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.Form1.resources
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.csproj.GenerateResource.cache
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.AssemblyInfoInputs.cache
@@ -16,3 +15,4 @@ C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\ref\TicTacToe.dll
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.pdb
 C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.genruntimeconfig.cache
+C:\Users\aaron\Desktop\PROJECT OOP\TicTacToe\obj\Debug\net5.0-windows\TicTacToe.body.resources
