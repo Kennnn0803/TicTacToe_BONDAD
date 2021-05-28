@@ -35,9 +35,9 @@ namespace TicTacToe
             this.score1 = new System.Windows.Forms.Label();
             this.player2 = new System.Windows.Forms.Label();
             this.player1 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.exitb = new System.Windows.Forms.Button();
+            this.resetb = new System.Windows.Forms.Button();
+            this.newgameb = new System.Windows.Forms.Button();
             this.ticbutton1 = new System.Windows.Forms.Button();
             this.ticbutton5 = new System.Windows.Forms.Button();
             this.ticbutton4 = new System.Windows.Forms.Button();
@@ -57,9 +57,9 @@ namespace TicTacToe
             this.panel1.Controls.Add(this.score1);
             this.panel1.Controls.Add(this.player2);
             this.panel1.Controls.Add(this.player1);
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.exitb);
+            this.panel1.Controls.Add(this.resetb);
+            this.panel1.Controls.Add(this.newgameb);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(530, 112);
@@ -107,137 +107,153 @@ namespace TicTacToe
             this.player1.TabIndex = 9;
             this.player1.Text = "Player 1 :";
             // 
-            // button11
+            // exitb
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button11.Location = new System.Drawing.Point(111, 62);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(101, 46);
-            this.button11.TabIndex = 8;
-            this.button11.Text = "button1";
-            this.button11.UseVisualStyleBackColor = false;
+            this.exitb.BackColor = System.Drawing.SystemColors.Highlight;
+            this.exitb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exitb.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.exitb.Location = new System.Drawing.Point(111, 62);
+            this.exitb.Name = "exitb";
+            this.exitb.Size = new System.Drawing.Size(101, 46);
+            this.exitb.TabIndex = 8;
+            this.exitb.Text = "EXIT";
+            this.exitb.UseVisualStyleBackColor = false;
+            this.exitb.Click += new System.EventHandler(this.exitb_Click);
             // 
-            // button10
+            // resetb
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button10.Location = new System.Drawing.Point(17, 62);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(88, 46);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "button1";
-            this.button10.UseVisualStyleBackColor = false;
+            this.resetb.BackColor = System.Drawing.SystemColors.Highlight;
+            this.resetb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.resetb.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.resetb.Location = new System.Drawing.Point(17, 62);
+            this.resetb.Name = "resetb";
+            this.resetb.Size = new System.Drawing.Size(88, 46);
+            this.resetb.TabIndex = 7;
+            this.resetb.Text = "RESET";
+            this.resetb.UseVisualStyleBackColor = false;
+            this.resetb.Click += new System.EventHandler(this.resetb_Click);
             // 
-            // button9
+            // newgameb
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button9.Location = new System.Drawing.Point(17, 10);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(195, 46);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "button1";
-            this.button9.UseVisualStyleBackColor = false;
+            this.newgameb.BackColor = System.Drawing.SystemColors.Highlight;
+            this.newgameb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.newgameb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.newgameb.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.newgameb.Location = new System.Drawing.Point(17, 10);
+            this.newgameb.Name = "newgameb";
+            this.newgameb.Size = new System.Drawing.Size(195, 46);
+            this.newgameb.TabIndex = 6;
+            this.newgameb.Text = "NEW GAME";
+            this.newgameb.UseVisualStyleBackColor = false;
+            this.newgameb.Click += new System.EventHandler(this.newgameb_Click);
             // 
             // ticbutton1
             // 
-            this.ticbutton1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton1.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton1.Location = new System.Drawing.Point(92, 141);
             this.ticbutton1.Name = "ticbutton1";
             this.ticbutton1.Size = new System.Drawing.Size(112, 111);
             this.ticbutton1.TabIndex = 1;
-            this.ticbutton1.Text = "button1";
             this.ticbutton1.UseVisualStyleBackColor = false;
+            this.ticbutton1.Click += new System.EventHandler(this.buttonclick);
             // 
             // ticbutton5
             // 
-            this.ticbutton5.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton5.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton5.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton5.Location = new System.Drawing.Point(206, 253);
             this.ticbutton5.Name = "ticbutton5";
             this.ticbutton5.Size = new System.Drawing.Size(112, 111);
             this.ticbutton5.TabIndex = 2;
-            this.ticbutton5.Text = "button1";
             this.ticbutton5.UseVisualStyleBackColor = false;
+            this.ticbutton5.Click += new System.EventHandler(this.buttonclick5);
             // 
             // ticbutton4
             // 
-            this.ticbutton4.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton4.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton4.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton4.Location = new System.Drawing.Point(92, 253);
             this.ticbutton4.Name = "ticbutton4";
             this.ticbutton4.Size = new System.Drawing.Size(112, 111);
             this.ticbutton4.TabIndex = 3;
-            this.ticbutton4.Text = "button1";
             this.ticbutton4.UseVisualStyleBackColor = false;
+            this.ticbutton4.Click += new System.EventHandler(this.buttonclick4);
             // 
             // ticbutton2
             // 
-            this.ticbutton2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton2.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton2.Location = new System.Drawing.Point(206, 141);
             this.ticbutton2.Name = "ticbutton2";
             this.ticbutton2.Size = new System.Drawing.Size(112, 111);
             this.ticbutton2.TabIndex = 4;
-            this.ticbutton2.Text = "button1";
             this.ticbutton2.UseVisualStyleBackColor = false;
+            this.ticbutton2.Click += new System.EventHandler(this.buttonclick2);
             // 
             // ticbutton3
             // 
-            this.ticbutton3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton3.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton3.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton3.Location = new System.Drawing.Point(320, 141);
             this.ticbutton3.Name = "ticbutton3";
             this.ticbutton3.Size = new System.Drawing.Size(112, 111);
             this.ticbutton3.TabIndex = 5;
-            this.ticbutton3.Text = "button1";
             this.ticbutton3.UseVisualStyleBackColor = false;
+            this.ticbutton3.Click += new System.EventHandler(this.buttonclick3);
             // 
             // ticbutton6
             // 
-            this.ticbutton6.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton6.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton6.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton6.Location = new System.Drawing.Point(320, 253);
             this.ticbutton6.Name = "ticbutton6";
             this.ticbutton6.Size = new System.Drawing.Size(112, 111);
             this.ticbutton6.TabIndex = 6;
-            this.ticbutton6.Text = "button1";
             this.ticbutton6.UseVisualStyleBackColor = false;
+            this.ticbutton6.Click += new System.EventHandler(this.buttonclick6);
             // 
             // ticbutton7
             // 
-            this.ticbutton7.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton7.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton7.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton7.Location = new System.Drawing.Point(92, 365);
             this.ticbutton7.Name = "ticbutton7";
             this.ticbutton7.Size = new System.Drawing.Size(112, 111);
             this.ticbutton7.TabIndex = 7;
-            this.ticbutton7.Text = "button1";
             this.ticbutton7.UseVisualStyleBackColor = false;
+            this.ticbutton7.Click += new System.EventHandler(this.buttonclick7);
             // 
             // ticbutton8
             // 
-            this.ticbutton8.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton8.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton8.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton8.Location = new System.Drawing.Point(206, 365);
             this.ticbutton8.Name = "ticbutton8";
             this.ticbutton8.Size = new System.Drawing.Size(112, 111);
             this.ticbutton8.TabIndex = 8;
-            this.ticbutton8.Text = "button1";
             this.ticbutton8.UseVisualStyleBackColor = false;
+            this.ticbutton8.Click += new System.EventHandler(this.buttonclick8);
             // 
             // ticbutton9
             // 
-            this.ticbutton9.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ticbutton9.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ticbutton9.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ticbutton9.Location = new System.Drawing.Point(320, 365);
             this.ticbutton9.Name = "ticbutton9";
             this.ticbutton9.Size = new System.Drawing.Size(112, 111);
             this.ticbutton9.TabIndex = 9;
-            this.ticbutton9.Text = "button1";
             this.ticbutton9.UseVisualStyleBackColor = false;
+            this.ticbutton9.Click += new System.EventHandler(this.buttonclick9);
             // 
             // body
             // 
@@ -274,9 +290,9 @@ namespace TicTacToe
         private System.Windows.Forms.Label score1;
         private System.Windows.Forms.Label player2;
         private System.Windows.Forms.Label player1;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button exitb;
+        private System.Windows.Forms.Button resetb;
+        private System.Windows.Forms.Button newgameb;
         private System.Windows.Forms.Button ticbutton5;
         private System.Windows.Forms.Button ticbutton4;
         private System.Windows.Forms.Button ticbutton2;
