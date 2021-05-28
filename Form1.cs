@@ -14,6 +14,7 @@ namespace TicTacToe
     {
         Boolean checker;
         int plus;
+        int turn_count = 1;
 
         void Enable_False()
         {
@@ -32,13 +33,17 @@ namespace TicTacToe
         void score()
         {
             // eto yung sa "X"
+
+            
+
+
             if (ticbutton1.Text == "X" && ticbutton5.Text == "X" && ticbutton9.Text == "X")
             {
                 ticbutton1.BackColor = Color.Aquamarine;
                 ticbutton5.BackColor = Color.Aquamarine;
                 ticbutton9.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -51,7 +56,7 @@ namespace TicTacToe
                 ticbutton2.BackColor = Color.Aquamarine;
                 ticbutton3.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus +1);
@@ -64,7 +69,7 @@ namespace TicTacToe
                 ticbutton5.BackColor = Color.Aquamarine;
                 ticbutton6.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus +1);
@@ -77,7 +82,7 @@ namespace TicTacToe
                 ticbutton8.BackColor = Color.Aquamarine;
                 ticbutton9.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus +1);
@@ -90,7 +95,7 @@ namespace TicTacToe
                 ticbutton4.BackColor = Color.Aquamarine;
                 ticbutton7.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -103,7 +108,7 @@ namespace TicTacToe
                 ticbutton5.BackColor = Color.Aquamarine;
                 ticbutton7.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -116,7 +121,7 @@ namespace TicTacToe
                 ticbutton5.BackColor = Color.Aquamarine;
                 ticbutton8.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -129,7 +134,7 @@ namespace TicTacToe
                 ticbutton6.BackColor = Color.Aquamarine;
                 ticbutton9.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -144,7 +149,7 @@ namespace TicTacToe
                 ticbutton5.BackColor = Color.Aquamarine;
                 ticbutton9.BackColor = Color.Aquamarine;
 
-                MessageBox.Show("Player 1 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -158,7 +163,7 @@ namespace TicTacToe
                 ticbutton2.BackColor = Color.AliceBlue;
                 ticbutton3.BackColor = Color.AliceBlue;
 
-                MessageBox.Show("Player 2 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 2 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -171,7 +176,7 @@ namespace TicTacToe
                 ticbutton5.BackColor = Color.AliceBlue;
                 ticbutton6.BackColor = Color.AliceBlue;
 
-                MessageBox.Show("Player 2 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 2 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -184,7 +189,7 @@ namespace TicTacToe
                 ticbutton8.BackColor = Color.AliceBlue;
                 ticbutton9.BackColor = Color.AliceBlue;
 
-                MessageBox.Show("Player 2 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 2 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -197,7 +202,7 @@ namespace TicTacToe
                 ticbutton4.BackColor = Color.AliceBlue;
                 ticbutton7.BackColor = Color.AliceBlue;
 
-                MessageBox.Show("Player 2 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 2 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -210,7 +215,7 @@ namespace TicTacToe
                 ticbutton5.BackColor = Color.AliceBlue;
                 ticbutton7.BackColor = Color.AliceBlue;
 
-                MessageBox.Show("Player 2 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 2 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -223,7 +228,7 @@ namespace TicTacToe
                 ticbutton5.BackColor = Color.AliceBlue;
                 ticbutton8.BackColor = Color.AliceBlue;
 
-                MessageBox.Show("Player 2 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 2 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
@@ -236,12 +241,15 @@ namespace TicTacToe
                 ticbutton6.BackColor = Color.AliceBlue;
                 ticbutton9.BackColor = Color.AliceBlue;
 
-                MessageBox.Show("Player 2 wins!", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Player 2 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 plus = int.Parse(score1.Text);
                 score1.Text = Convert.ToString(plus + 1);
                 Enable_False();
             }
+
+            if (turn_count == 9)
+                MessageBox.Show("We have a draw! Click Reset!");
 
 
         }
@@ -261,7 +269,6 @@ namespace TicTacToe
             {
                 ticbutton1.Text = "X";
                 checker = true;
-
             }
 
             else
@@ -271,7 +278,7 @@ namespace TicTacToe
             }
             score();
             ticbutton1.Enabled = false;
-
+            turn_count = turn_count + 1;
         }
 
         private void buttonclick2(object sender, EventArgs e)
@@ -290,6 +297,7 @@ namespace TicTacToe
             }
             score();
             ticbutton2.Enabled = false;
+            turn_count = turn_count + 1;
         }
 
         private void buttonclick3(object sender, EventArgs e)
@@ -308,6 +316,7 @@ namespace TicTacToe
             }
             score();
             ticbutton3.Enabled = false;
+            turn_count = turn_count + 1;
         }
 
         private void buttonclick4(object sender, EventArgs e)
@@ -326,6 +335,7 @@ namespace TicTacToe
             }
             score();
             ticbutton4.Enabled = false;
+            turn_count = turn_count + 1;
         }
 
         private void buttonclick5(object sender, EventArgs e)
@@ -344,6 +354,7 @@ namespace TicTacToe
             }
             score();
             ticbutton5.Enabled = false;
+            turn_count = turn_count + 1;
         }
 
         private void buttonclick6(object sender, EventArgs e)
@@ -362,6 +373,7 @@ namespace TicTacToe
             }
             score();
             ticbutton6.Enabled = false;
+            turn_count = turn_count + 1;
         }
 
         private void buttonclick7(object sender, EventArgs e)
@@ -380,6 +392,7 @@ namespace TicTacToe
             }
             score();
             ticbutton7.Enabled = false;
+            turn_count = turn_count + 1;
         }
 
         private void buttonclick8(object sender, EventArgs e)
@@ -398,6 +411,7 @@ namespace TicTacToe
             }
             score();
             ticbutton8.Enabled = false;
+            turn_count = turn_count + 1;
         }
 
         private void buttonclick9(object sender, EventArgs e)
@@ -416,14 +430,16 @@ namespace TicTacToe
             }
             score();
             ticbutton9.Enabled = false;
+            turn_count = turn_count + 1;
         }
+        
+
 // newgame
         private void newgameb_Click(object sender, EventArgs e)
         {
+            turn_count = 1;
             try
             {
-
-
                 ticbutton1.Enabled = true;
                 ticbutton2.Enabled = true;
                 ticbutton3.Enabled = true;
@@ -464,9 +480,10 @@ namespace TicTacToe
 
 
         }
-        // reset button nakatanggal na yung sa scores, di dapat magagalaw
+        // reset button nakatanggal na yung sa scores, di dapat magagalaw, padagdag turn count
         private void resetb_Click(object sender, EventArgs e)
         {
+            turn_count = 1;
             try
             {
                 ticbutton1.Enabled = true;
