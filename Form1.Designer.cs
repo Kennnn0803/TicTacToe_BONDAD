@@ -188,6 +188,7 @@ namespace TicTacToe
             this.ticbutton2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ticbutton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ticbutton2.Font = new System.Drawing.Font("Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ticbutton2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.ticbutton2.Location = new System.Drawing.Point(206, 141);
             this.ticbutton2.Name = "ticbutton2";
             this.ticbutton2.Size = new System.Drawing.Size(112, 111);
@@ -273,6 +274,8 @@ namespace TicTacToe
             this.Controls.Add(this.panel1);
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "body";
             this.Text = "Tic Tac Toe!";
             this.Load += new System.EventHandler(this.body_Load);

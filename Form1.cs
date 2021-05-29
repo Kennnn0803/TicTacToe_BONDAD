@@ -45,15 +45,15 @@ namespace TicTacToe
                 ticbutton3.Text == "X" && ticbutton6.Text == "X" && ticbutton9.Text == "X" )
 
             {
-                ticbutton1.BackColor = Color.Aquamarine;
-                ticbutton2.BackColor = Color.Aquamarine;
-                ticbutton3.BackColor = Color.Aquamarine;
-                ticbutton4.BackColor = Color.Aquamarine;
-                ticbutton5.BackColor = Color.Aquamarine;
-                ticbutton6.BackColor = Color.Aquamarine;
-                ticbutton7.BackColor = Color.Aquamarine;
-                ticbutton8.BackColor = Color.Aquamarine;
-                ticbutton9.BackColor = Color.Aquamarine;
+                ticbutton1.BackColor = Color.LightCyan;
+                ticbutton2.BackColor = Color.LightCyan;
+                ticbutton3.BackColor = Color.LightCyan;
+                ticbutton4.BackColor = Color.LightCyan;
+                ticbutton5.BackColor = Color.LightCyan;
+                ticbutton6.BackColor = Color.LightCyan;
+                ticbutton7.BackColor = Color.LightCyan;
+                ticbutton8.BackColor = Color.LightCyan;
+                ticbutton9.BackColor = Color.LightCyan;
 
                 MessageBox.Show("Player 1 wins! Please click Reset", "Tic Tac Toe!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -94,7 +94,7 @@ namespace TicTacToe
             if (turn_count == 9)
                 MessageBox.Show("We have a draw! Click Reset!");
 
-
+            
         }
         public body()
         {
@@ -293,6 +293,17 @@ namespace TicTacToe
                 ticbutton8.Enabled = true;
                 ticbutton9.Enabled = true;
 
+             
+                ticbutton1.BackColor = Color.WhiteSmoke;
+                ticbutton2.BackColor = Color.WhiteSmoke;
+                ticbutton3.BackColor = Color.WhiteSmoke;
+                ticbutton4.BackColor = Color.WhiteSmoke;
+                ticbutton5.BackColor = Color.WhiteSmoke;
+                ticbutton6.BackColor = Color.WhiteSmoke;
+                ticbutton7.BackColor = Color.WhiteSmoke;
+                ticbutton8.BackColor = Color.WhiteSmoke;
+                ticbutton9.BackColor = Color.WhiteSmoke;
+
                 ticbutton1.Text = "";
                 ticbutton2.Text = "";
                 ticbutton3.Text = "";
@@ -306,15 +317,6 @@ namespace TicTacToe
                 score1.Text = "0";
                 score2.Text = "0";
 
-                ticbutton1.BackColor = Color.Azure;
-                ticbutton2.BackColor = Color.Azure;
-                ticbutton3.BackColor = Color.Azure;
-                ticbutton4.BackColor = Color.Azure;
-                ticbutton5.BackColor = Color.Azure;
-                ticbutton6.BackColor = Color.Azure;
-                ticbutton7.BackColor = Color.Azure;
-                ticbutton8.BackColor = Color.Azure;
-                ticbutton9.BackColor = Color.Azure;
             }
             catch (Exception ex)
             {
@@ -326,6 +328,20 @@ namespace TicTacToe
         // reset button nakatanggal na yung sa scores, di dapat magagalaw, padagdag turn count
         private void resetb_Click(object sender, EventArgs e)
         {
+
+            ticbutton1.BackColor = Color.WhiteSmoke;
+            ticbutton2.BackColor = Color.WhiteSmoke;
+            ticbutton3.BackColor = Color.WhiteSmoke;
+            ticbutton4.BackColor = Color.WhiteSmoke;
+            ticbutton5.BackColor = Color.WhiteSmoke;
+            ticbutton6.BackColor = Color.WhiteSmoke;
+            ticbutton7.BackColor = Color.WhiteSmoke;
+            ticbutton8.BackColor = Color.WhiteSmoke;
+            ticbutton9.BackColor = Color.WhiteSmoke;
+            
+
+
+
             turn_count = 1;
             try
             {
@@ -350,17 +366,8 @@ namespace TicTacToe
                 ticbutton7.Text = "";
                 ticbutton8.Text = "";
                 ticbutton9.Text = "";
-
-                ticbutton1.BackColor = Color.Azure;
-                ticbutton2.BackColor = Color.Azure;
-                ticbutton3.BackColor = Color.Azure;
-                ticbutton4.BackColor = Color.Azure;
-                ticbutton5.BackColor = Color.Azure;
-                ticbutton6.BackColor = Color.Azure;
-                ticbutton7.BackColor = Color.Azure;
-                ticbutton8.BackColor = Color.Azure;
-                ticbutton9.BackColor = Color.Azure;
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
